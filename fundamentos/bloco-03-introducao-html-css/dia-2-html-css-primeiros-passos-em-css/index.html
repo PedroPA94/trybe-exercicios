@@ -4,17 +4,48 @@
         <meta charset="urf-8">
         <title>CSS</title>
         <style>
+
+            body {
+                font-size: 16px;
+            }
+
             h1 {
                 font-size: 65px;
                 color: orange;
+                font-family: sans-serif;
+                font-style: oblique;
+                text-align: center;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 3em;
+                text-decoration: underline;
             }
 
             ul {
                 background-color: lightblue;
             }
 
+            li {
+                line-height: 1.5em;
+                font-weight: 500;
+            }
+
             .fav-color {
                 background-color: lightgreen;
+            }
+
+            #yellow {
+                color: yellow;
+            }
+
+            #red {
+                color: red;
+            }
+
+            #brown {
+                color: brown;
             }
 
         </style>
@@ -23,9 +54,9 @@
         <h1>Exercícios 3.2</h1>
         <p class="fav-color">Qual a sua cor favorita?</p>
         <ul class="fav-color">
-            <li>Amarelo</li>
-            <li>Vermelho</li>
-            <li>Marrom</li>
+            <li id="yellow">Amarelo</li>
+            <li id="red">Vermelho</li>
+            <li id="brown">Marrom</li>
         </ul>
     </body>
 </html>
