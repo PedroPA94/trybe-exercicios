@@ -1,0 +1,42 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+ul {
+    background-color: lightblue;
+}
+
+li {
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+.fav-color {
+    background-color: lightgreen;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#red {
+    color: red;
+}
+
+#brown {
+    color: brown;
+}
