@@ -26,3 +26,11 @@ li {
 li em {
     font-weight: bold;
 }
+
+.programming-lang li:nth-child(n):nth-child(-n+3) {
+    color: blue;
+}
+
+.programming-lang .name-java {
+    background-color: pink;
+}
