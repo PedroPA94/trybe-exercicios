@@ -34,3 +34,27 @@ li em {
 .programming-lang .name-java {
     background-color: pink;
 }
+
+.allies a:hover {
+    font-weight: bold;
+}
+
+#stack:hover {
+    color:#f48225;
+}
+
+#w3:hover {
+    color: #04AA6D;
+}
+
+#mdn:hover {
+    color: #15141a;
+}
+
+#dev:hover {
+    color: yellow;
+}
+
+#trybe:hover {
+    color: #036b52;
+}
