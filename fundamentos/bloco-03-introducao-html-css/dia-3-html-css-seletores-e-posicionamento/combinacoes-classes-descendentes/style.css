@@ -1,12 +1,20 @@
-ol li {
+.phrases li {
     background-color: yellow;
 }
 
-ol li:nth-child(2n) {
+.phrases li:nth-child(2n) {
     color: green;
 }
 
-ol li:nth-child(2n+1) {
+.phrases li:nth-child(2n+1) {
     text-transform: uppercase;
 }
 
+.red-font {
+    color: red;
+}
+
+.red-font em {
+    font-size: 40px;
+    border: 1px solid black;
+}
