@@ -2,7 +2,7 @@ h1 {
     text-align: center;
 }
 
-.podium {
+#podium {
     text-align: center;
 }
 
@@ -32,4 +32,13 @@ h1 {
     text-align: center;
     width: 300px;
     display: inline-block;
+}
+
+#prizes {
+    text-align: center;
+}
+
+#prizes li {
+    list-style: none;
+    display: inline;
 }
