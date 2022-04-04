@@ -1,0 +1,39 @@
+h1, p {
+    text-align: center;
+}
+
+
+p {
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+li {
+    line-height: 25px;
+}
+
+li:hover {
+    background-color: #f3e6ab;
+}
+
+li:active {
+    font-family: monospace;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: #036b52;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,60 @@
+.phrases li {
+    background-color: yellow;
+}
+
+.phrases li:nth-child(2n) {
+    color: green;
+}
+
+.phrases li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+
+.red-font {
+    color: red;
+}
+
+.red-font em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.programming-lang li:nth-child(n):nth-child(-n+3) {
+    color: blue;
+}
+
+.programming-lang .name-java {
+    background-color: pink;
+}
+
+.allies a:hover {
+    font-weight: bold;
+}
+
+#stack:hover {
+    color:#f48225;
+}
+
+#w3:hover {
+    color: #04AA6D;
+}
+
+#mdn:hover {
+    color: #15141a;
+}
+
+#dev:hover {
+    color: yellow;
+}
+
+#trybe:hover {
+    color: #036b52;
+}
