@@ -50,6 +50,7 @@ h2 {
     width: 90%;
     margin: auto;
     display: block;
+    margin-bottom: 40px;
 }
 
 .mid-font {
@@ -72,7 +73,7 @@ table {
 }
 
 table caption {
-    background-color: darkgray;
+    background-color: lightgrey;
     padding: 3px 0;
     margin-bottom: 5px;
 }
@@ -80,4 +81,17 @@ table caption {
 td {
     column-width: 100px;
     line-height: 1.4em;
+}
+
+.facts p{
+    width: 90%;
+    line-height: 1.6em;
+    margin-bottom: 30px;
+}
+
+.facts img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    margin-bottom: 70px;
 }
