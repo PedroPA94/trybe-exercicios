@@ -95,3 +95,14 @@ td {
     width: 70%;
     margin-bottom: 70px;
 }
+
+.references li {
+    list-style-type: square;
+    line-height: 1.6em;
+    color: grey;
+}
+
+.references a {
+    color: grey;
+    font-weight: 500;
+}
