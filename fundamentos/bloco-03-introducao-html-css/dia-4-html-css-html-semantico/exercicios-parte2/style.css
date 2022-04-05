@@ -19,6 +19,7 @@ a:hover {
 
 header {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .nav-links li {
@@ -31,6 +32,12 @@ header {
     color: grey;
 }
 
+.main-content {
+    width: 50%;
+    margin: auto;
+    transform: translateX(-10%);
+}
+
 h2 {
     font-size: 3em;
 }
@@ -39,3 +46,38 @@ h2 {
     font-size: 2em;
 }
 
+#title-pic {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.mid-font {
+    font-weight: 500;
+}
+
+.info-container {
+    text-align: center;
+}
+
+.species-name, table {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+    text-align: left;
+}
+
+table {
+    font-size: 0.9em;
+}
+
+table caption {
+    background-color: darkgray;
+    padding: 3px 0;
+    margin-bottom: 5px;
+}
+
+td {
+    column-width: 100px;
+    line-height: 1.4em;
+}
