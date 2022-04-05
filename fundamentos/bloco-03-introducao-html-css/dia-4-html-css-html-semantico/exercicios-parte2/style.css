@@ -19,7 +19,7 @@ a:hover {
 
 header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .nav-links li {
@@ -48,10 +48,8 @@ h2 {
 }
 
 #title-pic {
-    width: 90%;
-    margin: auto;
-    display: block;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .mid-font {
@@ -112,11 +110,18 @@ td {
     width: 15%;
     vertical-align: top;
     transform: translateX(200%);
-    padding-top: 845px;
+    padding-top: 865px;
 }
 
 .side-bar a {
     text-decoration: none;
     color: black;
     line-height: 1.6em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.8em;
 }
