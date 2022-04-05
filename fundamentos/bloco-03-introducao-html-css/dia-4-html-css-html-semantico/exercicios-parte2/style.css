@@ -29,7 +29,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: grey;
+    color: rgb(73, 73, 73);
 }
 
 .main-content {
@@ -97,11 +97,11 @@ td {
 .references li {
     list-style-type: square;
     line-height: 1.6em;
-    color: grey;
+    color: rgb(73, 73, 73);
 }
 
 .references a {
-    color: grey;
+    color: rgb(73, 73, 73);
     font-weight: 500;
 }
 
