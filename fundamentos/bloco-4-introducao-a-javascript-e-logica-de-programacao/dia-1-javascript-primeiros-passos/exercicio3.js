@@ -1,5 +1,5 @@
 const a = 10;
-const b = 20;
+const b = 0;
 const c = 30;
 
 if (a === b && a === c) {
