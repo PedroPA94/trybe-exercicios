@@ -1,0 +1,127 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    font-size: 4em;
+}
+
+a {
+    opacity: 0.85;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+
+.main-content {
+    width: 40%;
+    margin: auto;
+    transform: translateX(60%);
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.facts h3 {
+    font-size: 2em;
+}
+
+#title-pic {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mid-font {
+    font-weight: 500;
+}
+
+.info-container {
+    text-align: center;
+}
+
+.species-name, table {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+    text-align: left;
+}
+
+table {
+    font-size: 0.9em;
+}
+
+table caption {
+    background-color: lightgrey;
+    padding: 3px 0;
+    margin-bottom: 5px;
+}
+
+td {
+    column-width: 100px;
+    line-height: 1.4em;
+}
+
+.facts p{
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+
+.facts img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    margin-bottom: 70px;
+}
+
+.references li {
+    list-style-type: square;
+    line-height: 1.6em;
+    color: rgb(73, 73, 73);
+}
+
+.references a {
+    color: rgb(73, 73, 73);
+    font-weight: 500;
+}
+
+.side-bar {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    transform: translateX(200%);
+    padding-top: 865px;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.6em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.8em;
+}
