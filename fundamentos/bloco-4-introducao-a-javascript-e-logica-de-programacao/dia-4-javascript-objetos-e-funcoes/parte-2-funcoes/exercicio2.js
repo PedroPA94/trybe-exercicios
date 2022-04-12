@@ -12,6 +12,6 @@ function indexOfGreatestNumber(arrayOfNumbers) {
     return index;
 };
 
-array = [2, 3, 6, 7, 10, 1];
+let array = [2, 3, 6, 7, 10, 1];
 
 console.log(indexOfGreatestNumber(array));
