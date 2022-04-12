@@ -1,5 +1,5 @@
 function checkPalindrome(word) {
-    reversedWord = word.split('').reverse().join('');
+    let reversedWord = word.split('').reverse().join('');
     
     if (reversedWord === word) {
         return true;
