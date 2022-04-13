@@ -102,6 +102,16 @@
         /*
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        function listParagraphs() {
+          let paragraph = document.getElementsByTagName('p');
+          for (let i = 0; i < paragraph.length; i += 1) {
+            console.log(paragraph[i].innerText);
+          }
+        }
+
+        listParagraphs()
+        
     </script>
   </body>
 </html>
