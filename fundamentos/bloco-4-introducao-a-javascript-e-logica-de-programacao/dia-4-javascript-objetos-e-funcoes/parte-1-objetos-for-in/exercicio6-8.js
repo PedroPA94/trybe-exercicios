@@ -23,7 +23,7 @@ leitor.livrosFavoritos[1].titulo = 'Harry Potter e o Prisioneiro de Azkaban';
 leitor.livrosFavoritos[1].autor = 'JK Rowling';
 leitor.livrosFavoritos[1].editora = 'Rocco';
 
-console.log(leitor.livrosFavoritos[1])
+console.log(leitor.livrosFavoritos[1]);
 
 
 // **** Exercício 8 ****
