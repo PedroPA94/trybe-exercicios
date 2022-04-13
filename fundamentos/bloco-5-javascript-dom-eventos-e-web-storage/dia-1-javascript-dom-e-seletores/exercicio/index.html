@@ -32,7 +32,7 @@
   </head>
   <body>
     <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+      <h1 class="title" id="title">Exercício 5.1 - JavaEscripito </h1>
     </header>    
     <main class="main-content">
       <section class="center-content">
@@ -78,6 +78,13 @@
         /*
         4. Crie uma função que corrija o texto da tag <h1>.
         */
+
+        function correctTitle(text) {
+          document.getElementById('title').innerText = text;
+        }
+
+        let newTitle = 'Exercício 5.1 - JavaScript';
+        correctTitle(newTitle);
 
         /*
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
