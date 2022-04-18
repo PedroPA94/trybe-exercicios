@@ -84,3 +84,19 @@ function friday(str) {
 const strFriday = 'Sexta-feira';
 
 friday(strFriday);
+
+// Exercício 5
+
+document.getElementById('btn-friday').addEventListener('click', function () {
+    let fridays = document.querySelectorAll('.friday');
+    let sextou = "SEXTOU!";
+    let originalDays = [4, 11, 18, 25];
+
+    for (let i in fridays) {
+        if (fridays[i].innerText === sextou) {
+            fridays[i].innerText = originalDays[i];
+        } else {
+            fridays[i].innerText = sextou;
+        }
+    }
+});
