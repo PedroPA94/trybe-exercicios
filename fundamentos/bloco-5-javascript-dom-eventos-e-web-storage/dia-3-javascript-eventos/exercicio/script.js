@@ -55,3 +55,18 @@ function holidays(str) {
 const str = 'Feriados'
 
 holidays(str);
+
+// Exercício 3
+
+document.getElementById('btn-holiday').addEventListener('click', function () {
+    let holidays = document.querySelectorAll('.holiday');
+    let bgColor = 'rgb(238,238,238)';
+    let newColor = 'yellow';
+    for (let i in holidays) {
+        if (holidays[i].style.backgroundColor === newColor) {
+            holidays[i].style.backgroundColor = bgColor;
+        } else {
+            holidays[i].style.backgroundColor = newColor;
+        }
+    }
+});
