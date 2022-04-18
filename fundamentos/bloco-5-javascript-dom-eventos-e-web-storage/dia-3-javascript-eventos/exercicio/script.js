@@ -52,9 +52,9 @@ function holidays(str) {
     document.querySelector('.buttons-container').appendChild(btn);   
 }
 
-const str = 'Feriados'
+const strHoliday = 'Feriados'
 
-holidays(str);
+holidays(strHoliday);
 
 // Exercício 3
 
@@ -70,3 +70,17 @@ document.getElementById('btn-holiday').addEventListener('click', function () {
         }
     }
 });
+
+// Exercício 4
+
+function friday(str) {
+    const btn = document.createElement('button');
+    btn.id = 'btn-friday';
+    btn.innerText = str;
+
+    document.querySelector('.buttons-container').appendChild(btn);
+}
+
+const strFriday = 'Sexta-feira';
+
+friday(strFriday);
