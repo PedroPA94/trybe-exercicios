@@ -100,3 +100,26 @@ document.getElementById('btn-friday').addEventListener('click', function () {
         }
     }
 });
+
+// Exercício 6
+
+function zoomIn() {
+    let days = document.getElementById('days');
+
+    days.addEventListener('mouseover', function (e) {
+        e.target.style.fontSize = '2em';
+    });
+    
+}
+
+function zoomOut() {
+    let days = document.getElementById('days');
+
+    days.addEventListener('mouseout', function (e) {
+        e.target.style.fontSize = '1em';
+    });
+
+}
+
+zoomIn();
+zoomOut();
