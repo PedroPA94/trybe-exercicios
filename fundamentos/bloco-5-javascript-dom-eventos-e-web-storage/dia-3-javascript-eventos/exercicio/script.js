@@ -104,22 +104,129 @@ document.getElementById('btn-friday').addEventListener('click', function () {
 // Exercício 6
 
 function zoomIn() {
-    let days = document.getElementById('days');
+    let days = document.querySelectorAll('.day');
 
-    days.addEventListener('mouseover', function (e) {
-        e.target.style.fontSize = '2em';
-    });
+    for (let day of days) {
+        day.addEventListener('mouseover', function (e) {
+            e.target.style.fontSize = '2em';
+        });
+    }
+
     
 }
 
 function zoomOut() {
-    let days = document.getElementById('days');
+    let days = document.querySelectorAll('.day');
 
-    days.addEventListener('mouseout', function (e) {
-        e.target.style.fontSize = '1em';
-    });
+    for (let day of days) {
+        day.addEventListener('mouseout', function (e) {
+            e.target.style.fontSize = '1em';
+        });
+    }
 
 }
 
 zoomIn();
 zoomOut();
+
+// Exercício 7
+
+function addTask(task) {
+    const taskElement = document.createElement('span');
+    taskElement.innerText = task;
+
+    document.querySelector('.my-tasks').appendChild(taskElement);
+}
+
+addTask('cozinhar');
+
+// Exercício 8
+
+function addTaskColor(color) {
+    const taskColor = document.createElement('div');
+    taskColor.classList.add('task');
+    taskColor.style.backgroundColor = color;
+
+    document.querySelector('.my-tasks').appendChild(taskColor);
+}
+
+addTaskColor('red');
+
+// Exercício 9
+
+function selectTask() {
+    let tasks = document.querySelectorAll('.task');
+    let days = document.querySelector('#days');
+
+    for (let task of tasks) {
+        task.addEventListener('click', function () {
+            if (task.className.includes('selected')) {
+                task.classList.remove('selected');
+                days.style.cursor = 'auto';
+            } else {
+                task.classList.add('selected');
+                days.style.cursor = 'pointer';
+
+            }
+        });
+    }
+}
+
+selectTask();
+
+// Exercício 10
+
+function taskDay() {
+    const days = document.querySelectorAll('.day');
+    const originalColor = 'rgb(119, 119, 119)';
+
+    for (let day of days) {
+        day.addEventListener('click', function () {
+            const selectedTask = document.querySelector('.selected');
+            if (selectedTask) {
+                if (day.style.color === selectedTask.style.backgroundColor) {
+                    day.style.color = originalColor;
+                } else {
+                    day.style.color = selectedTask.style.backgroundColor;
+                }
+            }
+        });
+    }
+}
+
+taskDay();
+
+// Bônus
+
+function addAppointment() {
+    let appointment = document.getElementById('task-input');
+    const appointmentList = document.querySelector('.task-list');
+
+    document.getElementById('btn-add').addEventListener('click', function () {
+        let input = appointment.value;
+        if (input.trim().length === 0) {
+            alert("Erro: compromisso inválido");
+            return;
+        }
+        let newAppointment = document.createElement('li');
+        newAppointment.innerText = input;
+
+        appointmentList.appendChild(newAppointment);
+    });
+
+    document.getElementById('task-input').addEventListener('keyup', function (e) {
+        if (e.key === 'Enter') {
+            let input = appointment.value;
+            if (input.trim().length === 0) {
+                alert("Erro: compromisso inválido");
+                return;
+            }
+            let newAppointment = document.createElement('li');
+            newAppointment.innerText = input;
+    
+            appointmentList.appendChild(newAppointment);
+        }
+    });
+}
+
+addAppointment();
