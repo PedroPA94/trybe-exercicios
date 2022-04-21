@@ -1,0 +1,84 @@
+#title, main {
+    text-align: center;
+    font-family: ubuntu;
+}
+
+#title {
+    font-size: 2.5em;
+    margin: 50px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10em;
+    background-color: #036b52;
+    color: white;
+    border-radius: 4px;
+}
+
+.color {
+    display: inline-block;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+#pixel-board {
+    margin-top: 20px;
+}
+
+.pixel {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#clear-board {
+    display: block;
+    margin: 20px auto 30px;
+}
+
+input, button {
+    font-family: ubuntu;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    margin-right: 20px;
+}
+
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #269984;
+    color: white;
+    box-shadow: 3px 2px 5px grey;
+}
+
+.color:hover, button:hover {
+    cursor: pointer;
+}
+
+.button-container {
+    width: 420px;
+    margin: 0 auto 25px;
+    text-align: left;
+    position: relative;
+}
+
+#generate-board {
+    position: absolute;
+    right: 35px;
+}
+
+.generate-button:hover {
+    animation: blink-color 0.3s infinite;
+}
+
+@keyframes blink-color {
+    0% { background-color: #036b52; }
+    50% { background-color: #269984; }
+    100% { background-color: #036b52; }
+}
