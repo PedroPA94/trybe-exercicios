@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(253, 251, 251);
+  font-size: 16px;
+  font-family: 'Work sans', sans-serif;
+  color: rgb(54, 49, 34);
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(227, 170, 166);
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: Enriqueta, serif;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+#cabecalho li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.1em;
+}
+
+table a {
+  color: rgb(54, 49, 34);
+}
+
+#cabecalho a {
+  text-decoration: none;
+  color: white;
+}
+
+#cabecalho a:hover {
+  color: rgb(221, 221, 221);
+}
+
+main {
+  padding-top: 160px;
+  margin: auto;
+  width: 60%;
+}
+
+.profile-container {
+  margin: auto;
+  width: 70%;
+}
+
+#minha_foto {
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+#profile-text {
+  display: inline-block;
+  width: 60%;
+}
+
+#profile-links img {
+  width: 5%;
+  margin: 0 20px 75px auto;
+}
+
+.lessons {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.lesson-container {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.lesson-container p {
+  margin: 0;
+  font-weight: 600;
+}
+
+table caption {
+  background-color: rgb(226, 170, 166);
+  color: white;
+  font-weight: 600;
+}
+
+table th {
+  font-weight: 500;
+}
+
+#learning {
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  width: 90%;
+}
+
+#learning p {
+  line-height: 1.6em;
+}
+
+.lado-esquerdo {
+  float: left;
+  width: 45%;
+}
+
+.lado-direito {
+  float: right;
+  width: 45%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
