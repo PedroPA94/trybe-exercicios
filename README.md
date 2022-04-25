@@ -42,9 +42,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-6: _[Projeto - Arte com Pixels](https://pedropa94.github.io/trybe-exercicios/projetos/sd-022-a-project-pixels-art/)_
-- [ ] 5-5: _[[Bônus] Projeto - Meme Generator]()_
-- [ ] 5-7: _[[Bônus] Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[[Bônus] Projeto - Adivinhe a Cor]()_
+- [X] 5-5: _[[Bônus] Projeto - Meme Generator](https://pedropa94.github.io/trybe-exercicios/projetos/sd-022-a-project-meme-generator/)_
+- [X] 5-7: _[[Bônus] Projeto - Lista de tarefas](https://pedropa94.github.io/trybe-exercicios/projetos/sd-022-a-project-todo-list/)_
+- [X] 5-7: _[[Bônus] Projeto - Adivinhe a Cor](https://pedropa94.github.io/trybe-exercicios/projetos/sd-022-a-project-color-guess/)_
 - [ ] 5-7: _[[Bônus] Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
