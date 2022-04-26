@@ -68,6 +68,13 @@
     sendButton.addEventListener('click', (event) => {
       event.preventDefault();
     })
+
+    const form = document.querySelector('form');
+    const resetButton = document.createElement('button');
+
+    resetButton.type = 'reset';
+    resetButton.textContent = 'Limpar';
+    form.append(resetButton);
   </script>  
 </body>
 </html>
