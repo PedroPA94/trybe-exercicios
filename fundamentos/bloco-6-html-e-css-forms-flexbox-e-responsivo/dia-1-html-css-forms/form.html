@@ -56,7 +56,7 @@
       </div>
       <div class="form-line">
         <label for="check2-input">
-          <input type="checkbox" name="check2" id="check2-input">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" name="check2" id="check2-input" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
         </label>
       </div>
       <button type="submit" id="send-button">Enviar</button>
@@ -65,8 +65,8 @@
   <script>
     const sendButton = document.getElementById('send-button');
 
-    sendButton.addEventListener('click', (event) => {
-      event.preventDefault();
+    sendButton.addEventListener('click', () => {
+      sendButton.preventDefault();
     })
 
     const form = document.querySelector('form');
@@ -75,6 +75,11 @@
     resetButton.type = 'reset';
     resetButton.textContent = 'Limpar';
     form.append(resetButton);
+
+    const check2 = document.getElementById('check2-input');
+    check2.addEventListener('invalid', () => {
+      check2.setCustomValidity('É necessário autorizar o uso de imagens para enviar as informações.');
+    });
   </script>  
 </body>
 </html>
