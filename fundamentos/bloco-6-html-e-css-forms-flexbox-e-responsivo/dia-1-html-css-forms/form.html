@@ -7,6 +7,61 @@
   <title>TrybeTrip</title>
 </head>
 <body>
+  <header>
+    <h1>Concurso TrybeTrip</h1>
+    <h3>Quer concorrer a uma viagem totalmente paga pela Trybe? Preencha o formulário abaixo!</h3>
+  </header>
+  <main>
+    <form action="" method="GET" id="form-trip">
+      <div class="form-line">
+        <label for="name-input">Nome completo:
+          <input type="text" name="name" id="name-input" minlength="10" maxlength="40">
+        </label>
+      </div>
+      <div class="form-line">
+        <label for="email-input">Email:
+          <input type="email" name="name" id="email-input" minlength="10" maxlength="50">
+        </label>
+      </div>
+      <div class="form-line">
+        <fieldset id="trip-options" form="form-trip">
+          <legend>Destino preferido:</legend>
+          <label for="opt1">
+            <input type="radio" name="trip-options" id="opt1">Cidade
+          </label>
+          <label for="opt2">
+            <input type="radio" name="trip-options" id="opt2">Campo
+          </label>
+          <label for="opt3">
+            <input type="radio" name="trip-options" id="opt3">Praia
+          </label>
+          <label for="opt4">
+            <input type="radio" name="trip-options" id="opt4">Montanhas
+          </label>         
+        </fieldset>
+      </div>
+      <div class="form-line">
+        <label for="answer-input">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea name="answer" id="answer-input" cols="30" rows="10" maxlength="500"></textarea>
+      </div>
+      <div class="form-line">
+        <label for="date-input">Qual a melhor data para realizar a sua viagem?
+          <input type="date" name="date" id="date-input">
+        </label>
+      </div>
+      <div class="form-line">
+        <label for="check1-input">
+          <input type="checkbox" name="check1" id="check1-input">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        </label>
+      </div>
+      <div class="form-line">
+        <label for="check2-input">
+          <input type="checkbox" name="check2" id="check2-input">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
   
 </body>
 </html>
