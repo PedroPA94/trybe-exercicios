@@ -15,12 +15,12 @@
     <form action="" method="GET" id="form-trip">
       <div class="form-line">
         <label for="name-input">Nome completo:
-          <input type="text" name="name" id="name-input" minlength="10" maxlength="40">
+          <input type="text" name="name" id="name-input" minlength="10" maxlength="40" required>
         </label>
       </div>
       <div class="form-line">
         <label for="email-input">Email:
-          <input type="email" name="name" id="email-input" minlength="10" maxlength="50">
+          <input type="email" name="name" id="email-input" minlength="10" maxlength="50" required>
         </label>
       </div>
       <div class="form-line">
@@ -63,23 +63,41 @@
     </form>
   </main>
   <script>
-    const sendButton = document.getElementById('send-button');
+    function createResetButton() {
+      const form = document.querySelector('form');
+      const resetButton = document.createElement('button');
+      resetButton.type = 'reset';
+      resetButton.textContent = 'Limpar';
+      form.append(resetButton);
+    }
 
-    sendButton.addEventListener('click', () => {
-      sendButton.preventDefault();
-    })
+    function checkboxValidity(element) {
+      element.setCustomValidity('')
+      if (!element.checkValidity()) {
+        element.setCustomValidity('Essa autorização é necessária para enviar as informações.');
+      }
+    }
 
-    const form = document.querySelector('form');
-    const resetButton = document.createElement('button');
+    document.getElementById('send-button').addEventListener('click', (event) => {
+      const emailInput = document.getElementById('email-input');
+      const nameInput = document.getElementById('name-input');
+      const check2 = document.getElementById('check2-input');
 
-    resetButton.type = 'reset';
-    resetButton.textContent = 'Limpar';
-    form.append(resetButton);
+      checkboxValidity(check2);
 
-    const check2 = document.getElementById('check2-input');
-    check2.addEventListener('invalid', () => {
-      check2.setCustomValidity('É necessário autorizar o uso de imagens para enviar as informações.');
+      if (!check2.checkValidity()) {
+        return;
+      }
+      if (emailInput.checkValidity() && nameInput.checkValidity()) {
+        alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+      } else {
+        event.preventDefault();
+        alert('Dados Inválidos');
+      }
     });
+
+    createResetButton();
+
   </script>  
 </body>
 </html>
