@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3d495c;
+  border-radius: 50px;
+  background-color:  #2fc18c;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+#content {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  line-height: 1.3;
+  border-radius: 10px;
+  border: 1px solid #036b52;
+}
+
+header {
+  background-color: #036b52;
+  padding: 30px;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+main {
+  padding: 40px;
+  font-size: 1.1em;
+}
+
+.form-line {
+  margin-bottom: 30px;
+}
+
+input {
+  font-size: 0.9em;
+  padding: 4px;
+  color: #3d495c;
+  border: 1px solid #3d495c;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 2px solid #3d495c;
+  outline: none;
+}
+
+input[type='text'] {
+  margin-right: 20px;
+}
+
+input[type='date'] {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+input[type='radio'], input[type='checkbox'] {
+  margin-right: 7px;
+}
+
+fieldset {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+fieldset label {
+  margin-right: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 5em;
+  border: 1px solid #3d495c;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #3d495c;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+textarea:focus {
+  border: 2px solid #3d495c;
+  outline: none;
+}
+
+
+#button-container {
+ text-align: center;
+}
+
+button {
+  padding: 10px 40px;
+  font-size: 1em;
+  background-color: #036b52;
+  color: white;
+  border: 1px solid #90aa90;
+  border-radius: 5px;
+  margin: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

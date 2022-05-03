@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+      <h1>Concurso TrybeTrip</h1>
+      <h3>Quer concorrer a uma viagem totalmente paga pela Trybe? Preencha o formulário abaixo!</h3>
+    </header>
+    <main>
+      <form action="" method="GET" id="form-trip">
+        <div class="form-line">
+          <label for="name-input">Nome completo:
+            <input type="text" name="name" id="name-input" minlength="10" maxlength="40" required>
+          </label>
+          <label for="email-input">Email:
+            <input type="email" name="name" id="email-input" minlength="10" maxlength="50" required>
+          </label>
+        </div>
+        <div class="form-line">
+          <fieldset id="trip-options" form="form-trip">
+            <legend>Destino preferido:</legend>
+            <label for="opt1">
+              <input type="radio" name="trip-options" id="opt1">Cidade
+            </label>
+            <label for="opt2">
+              <input type="radio" name="trip-options" id="opt2">Campo
+            </label>
+            <label for="opt3">
+              <input type="radio" name="trip-options" id="opt3">Praia
+            </label>
+            <label for="opt4">
+              <input type="radio" name="trip-options" id="opt4">Montanhas
+            </label>         
+          </fieldset>
+        </div>
+        <div class="form-line">
+          <label for="answer-input">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+          <textarea name="answer" id="answer-input" maxlength="500"></textarea>
+        </div>
+        <div class="form-line">
+          <label for="date-input">Qual a melhor data para realizar a sua viagem?
+            <input type="date" name="date" id="date-input">
+          </label>
+        </div>
+        <div class="form-line">
+          <label for="check1-input">
+            <input type="checkbox" name="check1" id="check1-input">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+        </div>
+        <div class="form-line">
+          <label for="check2-input">
+            <input type="checkbox" name="check2" id="check2-input" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          </label>
+        </div>
+        <div id="button-container">
+        <button type="submit" id="send-button">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </div>
+  <script>
+    function createResetButton() {
+      const container = document.getElementById('button-container');
+      const resetButton = document.createElement('button');
+      resetButton.type = 'reset';
+      resetButton.textContent = 'Limpar';
+      container.append(resetButton);
+    }
+
+    function checkboxValidity(element) {
+      element.setCustomValidity('')
+      if (!element.checkValidity()) {
+        element.setCustomValidity('Essa autorização é necessária para enviar as informações.');
+      }
+    }
+
+    document.getElementById('send-button').addEventListener('click', (event) => {
+      const emailInput = document.getElementById('email-input');
+      const nameInput = document.getElementById('name-input');
+      const check2 = document.getElementById('check2-input');
+
+      checkboxValidity(check2);
+
+      if (!check2.checkValidity()) {
+        return;
+      }
+      if (emailInput.checkValidity() && nameInput.checkValidity()) {
+        alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+      } else {
+        event.preventDefault();
+        alert('Dados Inválidos');
+      }
+    });
+
+    createResetButton();
+
+  </script>  
+</body>
+</html>
