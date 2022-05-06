@@ -46,3 +46,10 @@ const sort = (array) => {
 sort(oddsAndEvens);
 
 console.log(`Os números ${oddsAndEvens.join(', ')} se encontram ordenados de forma crescente!`);
+
+
+// Exercício 2 - Bônus
+
+const oddsAndEvensTwo = [13, 3, 4, 10, 7, 2];
+
+console.log(oddsAndEvensTwo.sort((a, b) => a - b));
