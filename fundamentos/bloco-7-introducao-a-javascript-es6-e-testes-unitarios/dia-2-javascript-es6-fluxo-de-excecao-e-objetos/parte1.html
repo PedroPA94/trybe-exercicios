@@ -19,18 +19,18 @@
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
       const resultOutput = document.getElementById('result');
-      const result = parseInt(value1, 10) + parseInt(value2, 10);
       try {
-        checkIfEmptyInput(value1, value2)
-        // checkIfNumber(result);
+        checkIfEmptyInput(value1, value2);
+        checkIfNumber(value1, value2);
       }
       catch (error) {
-        return resultOutput.textContent = `Erro: ${error.message}`
+        return resultOutput.textContent = `Erro: ${error.message}`;
       }
       finally {
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
-      }      
+      }
+      const result = parseInt(value1, 10) + parseInt(value2, 10);      
       resultOutput.textContent = `Resultado: ${result}`;      
     }
     function checkIfEmptyInput(input1, input2) {
@@ -38,10 +38,9 @@
         throw new Error('Valor de entrada vazio!')
       }
     }
-    function checkIfNumber(valueToCheck) {
-      console.log(typeof(valueToCheck))
-      if (typeof(valueToCheck) !== 'number') {
-        throw new Error('Valores de entrada inválidos');
+    function checkIfNumber(num1, num2) {
+      if (isNaN(num1) || isNaN(num2)) {
+        throw new Error('Valores de entrada precisam ser números');
       }
     }
     window.onload = () => {
