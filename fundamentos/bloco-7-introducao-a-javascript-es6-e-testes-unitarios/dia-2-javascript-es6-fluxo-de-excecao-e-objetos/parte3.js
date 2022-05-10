@@ -69,3 +69,16 @@ function getNumberOfStudents(object) {
 
 console.log(getNumberOfStudents(allLessons))
 
+
+// Exercício 7
+
+const getValueByNumber = (object, number) => Object.values(object)[number];
+
+console.log(getValueByNumber(lesson1, 0))
+
+
+// Exercício 8
+
+const verifyPair = (object, property, value) => object[property] === value;
+
+console.log(verifyPair(lesson1, 'professor', 'Maria Clara'))
