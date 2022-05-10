@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão</title>
+  <style>
+    body {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    button {
+      all: unset;
+      background-color: rgb(255, 0, 0);
+      padding: 50px 25px;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-weight: 800;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      box-shadow: 3px 3px 10px black;
+    }
+
+    button:hover {
+      background-color: rgb(220, 0, 0);
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <button>NÃO<br>CLIQUE!!!</button>
+  <p><span></span></p>
+</body>
+<script>
+const button = document.querySelector('button');
+const clicks = document.querySelector('span');
+const text = document.querySelector('p');
+
+button.addEventListener('click', () => {
+  const currentClicks = clicks.textContent ? parseInt(clicks.textContent, 10) : 0;
+  text.textContent = `Número de cliques: ${clicks.textContent = currentClicks + 1}`;
+});
+</script>
+</html>
