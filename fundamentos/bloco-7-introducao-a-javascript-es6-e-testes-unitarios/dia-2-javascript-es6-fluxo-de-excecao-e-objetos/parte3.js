@@ -125,4 +125,4 @@ const createReport = (object, professor) => {
   return report;
 }
 
-console.log(createReport(allLessons, 'Maria Clara'))
+console.log(createReport(allLessons, 'Maria Clara'));
