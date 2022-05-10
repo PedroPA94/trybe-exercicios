@@ -32,3 +32,26 @@ const longestWord = (sentence) => {
 }
 
 console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu')) // retorna 'aconteceu'
+
+
+// Exercício 4
+
+const mainSkills = ['JavaScript', 'HTML', 'CSS', 'Git', 'Unix']
+
+const replaceStringInSentence = (string) => {
+  const sentence = 'Tryber x aqui!'
+  return sentence.replace('x', string);
+}
+
+const listMainSkills = (string) => {
+  const skills = mainSkills.sort();
+  return `  ${string}
+  Minhas cinco principais habilidades são:
+   \u26AC ${skills[0]}
+   \u26AC ${skills[1]}
+   \u26AC ${skills[2]}
+   \u26AC ${skills[3]}
+   \u26AC ${skills[4]}
+  #goTrybe`
+}
+console.log(listMainSkills(replaceStringInSentence('Pedro')));
