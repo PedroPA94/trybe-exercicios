@@ -26,4 +26,25 @@ function addPropertyToObject(object, property, value) {
 }
 
 addPropertyToObject(lesson2, 'turno', 'noite');
-console.log(lesson2)
+console.log(lesson2);
+
+
+// Exercício 2
+
+const listKeys = (object) => Object.keys(object);
+
+console.log(listKeys(lesson1));
+
+
+// Exercício 3
+
+const objectLength = (object) => Object.keys(object).length;
+
+console.log(objectLength(lesson3));
+
+
+// Exercício 4
+
+const listValues = (object) => Object.values(object);
+
+console.log(listValues(lesson2));
