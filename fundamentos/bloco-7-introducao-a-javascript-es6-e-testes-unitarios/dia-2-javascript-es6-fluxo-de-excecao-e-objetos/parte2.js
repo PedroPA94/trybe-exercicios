@@ -46,7 +46,21 @@ console.log(customerInfo(order));
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias
-
+  const discount = 10;
+  const modifier = {
+    name: 'Luiz Silva',
+    payment: {
+      total: order.payment.total - discount,
+    },
+  };
+  Object.assign(order, modifier);
+  const sabores = Object.keys(order.order.pizza).join(', ');
+  const drinksArray = Object.values(order.order.drinks);
+  const drinks = [];
+  for (let entry in drinksArray) {
+    drinks.push(drinksArray[entry].type)  // Caso existam mais bebidas no pedido
+  }
+  return `Olá ${order.name}, o total do seu pedido de ${sabores} e ${drinks.join(', ')} é R$ ${order.payment.total}`;
 }
 
-orderModifier(order);
+console.log(orderModifier(order));
