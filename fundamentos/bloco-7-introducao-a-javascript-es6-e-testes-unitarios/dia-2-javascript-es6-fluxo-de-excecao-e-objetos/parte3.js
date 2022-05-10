@@ -82,3 +82,47 @@ console.log(getValueByNumber(lesson1, 0))
 const verifyPair = (object, property, value) => object[property] === value;
 
 console.log(verifyPair(lesson1, 'professor', 'Maria Clara'))
+
+
+/*
+***********
+** Bônus **
+***********
+*/
+
+// Exercício 1
+
+const studentsOfSubject = (object, subject) => {
+  let numberOfStudents = 0;
+  const lessons = Object.values(object);
+  for (let lesson of lessons) {
+    if (lesson.materia === subject) {
+      numberOfStudents += lesson.numeroEstudantes;
+    }
+  }
+  return numberOfStudents;
+}
+
+console.log(studentsOfSubject(allLessons, 'Matemática'));
+
+
+// Exercício 2
+
+const createReport = (object, professor) => {
+  const report = {
+    'professor': professor,
+  };
+  const aulas = [];
+  let totalStudents = 0;
+  for (let entry of Object.values(object)) {
+    if (entry['professor'] === professor) {
+      aulas.push(entry.materia)
+      totalStudents += entry.numeroEstudantes;
+    }
+  }
+  report['aulas'] = aulas;
+  report['estudantes'] = totalStudents;
+  return report;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'))
