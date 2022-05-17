@@ -1,4 +1,5 @@
 const authorBornIn1947 = require('./exercise1');
+const smallerName = require('./exercise2');
 
 const books = [
   {
@@ -63,4 +64,5 @@ const books = [
   },
 ];
 
-console.log(authorBornIn1947(books))
+console.log(`Ex. 1 - Autor nascido em 1947: ${authorBornIn1947(books)}`);
+console.log(`Ex. 2 - Livro de menor título: ${smallerName(books)}`);
