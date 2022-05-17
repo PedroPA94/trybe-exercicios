@@ -3,6 +3,7 @@ const smallerName = require('./exercise2');
 const getNamedBook = require('./exercise3');
 const booksOrderedByReleaseYearDesc = require('./exercise4');
 const everyoneWasBornOnSecXX = require('./exercise5');
+const someBookWasReleaseOnThe80s = require('./exercise6');
 
 const books = [
   {
@@ -72,3 +73,4 @@ console.log(`Ex. 2 - Livro de menor título: ${smallerName(books)} \n`);
 console.log(`Ex. 3 - Livro com título de 26 caracteres: ${JSON.stringify(getNamedBook(books), null, 2)} \n`);
 console.log(`Ex. 4 - Livros ordenados por ano de lançamento, decrescente: ${JSON.stringify(booksOrderedByReleaseYearDesc(books), null, 2)} \n`);
 console.log(`Ex. 5 - Todos os autores nasceram no século XX? ${everyoneWasBornOnSecXX(books)} \n`);
+console.log(`Ex. 6 - Algum livro foi lançado nos anos 80? ${someBookWasReleaseOnThe80s(books)} \n`);
