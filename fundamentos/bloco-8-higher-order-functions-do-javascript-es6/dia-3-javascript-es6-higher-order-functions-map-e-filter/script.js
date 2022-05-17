@@ -1,3 +1,5 @@
+const formatedBookNames = require('./exercise1');
+
 const books = [
   {
     id: 1,
@@ -61,3 +63,4 @@ const books = [
   },
 ];
 
+console.log(`Ex. 1: \n ${JSON.stringify(formatedBookNames(books), null, 2)} \n`);
