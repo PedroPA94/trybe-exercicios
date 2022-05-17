@@ -1,6 +1,7 @@
 const authorBornIn1947 = require('./exercise1');
 const smallerName = require('./exercise2');
 const getNamedBook = require('./exercise3');
+const booksOrderedByReleaseYearDesc = require('./exercise4');
 
 const books = [
   {
@@ -65,6 +66,7 @@ const books = [
   },
 ];
 
-console.log(`Ex. 1 - Autor nascido em 1947: ${authorBornIn1947(books)}`);
-console.log(`Ex. 2 - Livro de menor título: ${smallerName(books)}`);
-console.table(`Ex. 3 - Livro com título de 26 caracteres: ${JSON.stringify(getNamedBook(books), null, 2)}`);
+console.log(`Ex. 1 - Autor nascido em 1947: ${authorBornIn1947(books)} \n`);
+console.log(`Ex. 2 - Livro de menor título: ${smallerName(books)} \n`);
+console.log(`Ex. 3 - Livro com título de 26 caracteres: ${JSON.stringify(getNamedBook(books), null, 2)} \n`);
+console.log(`Ex. 4 - Livros ordenados por ano de lançamento, decrescente: ${JSON.stringify(booksOrderedByReleaseYearDesc(books), null, 2)} \n`);
