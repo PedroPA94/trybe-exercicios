@@ -1,4 +1,5 @@
 const formatedBookNames = require('./exercise1');
+const nameAndAge = require('./exercise2');
 
 const books = [
   {
@@ -64,3 +65,4 @@ const books = [
 ];
 
 console.log(`Ex. 1: \n ${JSON.stringify(formatedBookNames(books), null, 2)} \n`);
+console.log(`Ex. 2: \n ${JSON.stringify(nameAndAge(books), null, 2)}`);
