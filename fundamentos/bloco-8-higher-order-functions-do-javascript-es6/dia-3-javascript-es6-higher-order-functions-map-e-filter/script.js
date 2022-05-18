@@ -4,6 +4,7 @@ const fantasyOrScienceFiction = require('./exercise3');
 const oldBooksOrdered = require('./exercise4');
 const fantasyOrScienceFictionAuthors = require('./exercise5');
 const oldBooks = require('./exercise6');
+const authorWith3DotsOnName = require('./exercise7');
 
 const books = [
   {
@@ -74,3 +75,4 @@ console.log(`Ex. 3: \n ${JSON.stringify(fantasyOrScienceFiction(books), null, 2)
 console.log(`Ex. 4: \n ${JSON.stringify(oldBooksOrdered(books), null, 2)} \n`);
 console.log(`Ex. 5: \n ${JSON.stringify(fantasyOrScienceFictionAuthors(books), null, 2)} \n`);
 console.log(`Ex. 6: \n ${JSON.stringify(oldBooks(books), null, 2)} \n`);
+console.log(`Ex. 7: ${authorWith3DotsOnName(books)}`);
