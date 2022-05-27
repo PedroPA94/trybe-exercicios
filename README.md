@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias Ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -61,7 +61,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Fluxo de Exceção e Objects_
 - [X] 7-3: _Primeiros passos em Jest_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/PedroPA94/trybe-exercicios/tree/main/projetos/sd-022-a-project-js-unit-tests)_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -70,9 +70,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-5: _[Projeto - Zoo functions]()_
+- [X] 8-5: _[Projeto - Zoo functions](https://github.com/PedroPA94/trybe-exercicios/tree/main/projetos/sd-022-a-project-zoo-functions)_
 
-## Desenvolvimento Front-end
+## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
