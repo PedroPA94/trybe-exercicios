@@ -1,0 +1,27 @@
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.pokemons { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.filter-buttons {
+  background-color: #DEDEDE;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 21%;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px 100px;
+}
