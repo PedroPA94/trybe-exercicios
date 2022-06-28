@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background-color: #DC0A2D;
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+h1 {
+  color: #FFC300;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px black;
+}
