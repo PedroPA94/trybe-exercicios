@@ -19,8 +19,27 @@ app.get('/myActivities/:id', (req, res) => {
 
 app.get('/filter/myActivities', (req, res) => {
   const { status } = req.query;
-  const filteredActivities = activities
+
+  if (status) {
+    const filteredActivities = activities
     .filter((act) => act.status.toLowerCase() === status.toLowerCase());
 
   res.status(200).json(filteredActivities);
+  }
+
+  res.status(404).send('Page not found');
+});
+
+app.get('/search/myActivities', (req, res) => {
+  const { q: query } = req.query;
+  const pattern = RegExp(`.*${query}.*`);
+
+  if (query) {
+    const filteredActivities = activities
+    .filter((act) => pattern.test(act.description));
+
+    res.status(200).json(filteredActivities);
+  }
+
+  res.status(404).send('Page not found');
 });
