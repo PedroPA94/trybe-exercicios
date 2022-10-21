@@ -9,18 +9,20 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   PatientSurgery.associate = (models) => {
-    Patient.hasMany(models.Surgery, {
+    models.Patient.belongsToMany(models.Surgery, {
       as: 'surgeries',
       through: PatientSurgery,
       foreignKey: 'patientId',
       otherKey: 'surgeryId'
     });
 
-    Surgery.hasMany(models.Patient, {
+    models.Surgery.belongsToMany(models.Patient, {
       as: 'patients',
       through: PatientSurgery,
       foreignKey: 'surgeryId',
       otherKey: 'patientId'
     });
   };
+
+  return PatientSurgery;
 };

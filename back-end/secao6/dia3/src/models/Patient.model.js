@@ -11,22 +11,17 @@ module.exports = (sequelize, DataTypes) => {
       },
       planId: {
         type: DataTypes.INTEGER,
-        references: {
-          model: 'Plans',
-          key: 'planId'
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE'
+        foreignKey: true
       }
     },
     {
       timestamps: false,
-      underscore: true,
+      underscored: true,
       tableName: 'Patients'
     });
 
   Patient.associate = (models) => {
-    Patient.hasOne(models.Plan, {
+    Patient.belongsTo(models.Plan, {
       as: 'plan',
       foreignKey: 'planId'
     })
