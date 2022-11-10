@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "activity1": "tsnd ./atividade1/server.ts"
+    "activity1": "tsnd ./atividade1/server.ts",
+    "activity2": "tsnd ./atividade2/server.ts"
   },
   "keywords": [],
   "author": "",
