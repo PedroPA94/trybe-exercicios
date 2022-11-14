@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "activity1": "tsnd ./atividade1/server.ts",
-    "activity2": "tsnd ./atividade2/server.ts"
+    "activity2": "tsnd ./atividade2/server.ts",
+    "activity3": "tsnd ./atividade3/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "express-async-errors": "^3.1.1",
     "joi": "^17.7.0",
     "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "snakeize": "^0.1.0"
   }
 }
