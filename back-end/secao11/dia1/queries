@@ -1,0 +1,39 @@
+// exercício 1
+use('bios')
+db.bios.find({ _id: 8 })
+
+// exercício 2
+use('bios')
+db.bios.find({ _id: 8 }, { name: 1 })
+
+// exercício 3
+use('bios')
+db.bios.find({ _id: 8 }, { name: 1, birth: 1, _id: 0 })
+
+// exercício 4
+use('bios')
+db.bios.find({ "name.first": "John" }).pretty()
+
+// exercício 5
+use('bios')
+db.bios.find().limit(3).pretty()
+
+// exercício 6
+use('bios')
+db.bios.find().skip(5).limit(2)
+
+// exercicio 7
+use('exercicioBooks')
+db.books.countDocuments();
+
+// exercicio 8
+use('exercicioBooks')
+db.books.countDocuments({ status: 'PUBLISH' });
+
+// exercício 9
+use('exercicioBooks')
+db.books.find({}, { isbn: 1, title: 1, pageCount: 1, _id: 0}).limit(3)
+
+// exercício 10
+use('exercicioBooks')
+db.books.find({ status: 'MEAP' }, { title: 1, authors: 1, status: 1 }).skip(5).limit(10)
