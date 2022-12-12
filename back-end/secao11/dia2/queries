@@ -1,0 +1,87 @@
+// exercicio 2
+use('class');
+db.superheroes.find({ "aspects.height": { $lt: 180 }});
+
+// exercicio 3
+use('class');
+db.superheroes.countDocuments({ "aspects.height": { $lt: 180 }});
+
+// exercicio 4
+use('class');
+db.superheroes.countDocuments({ "aspects.height": { $lte: 180 }});
+
+// exercicio 5
+use('class');
+db.superheroes.findOne({ "aspects.height": { $gte: 200 }});
+
+// exercicio 6
+use('class');
+db.superheroes.countDocuments({ "aspects.height": { $gte: 200 }});
+
+// exercicio 7
+use('class');
+db.superheroes.find({ "aspects.eyeColor": "green" });
+
+// exercicio 8
+use('class');
+db.superheroes.countDocuments({ "aspects.eyeColor": "blue" });
+
+// exercicio 9
+use('class');
+db.superheroes.find({ "aspects.hairColor": { $in: ['black', 'No hair' ]} });
+
+// exercicio 10
+use('class');
+db.superheroes.countDocuments({ "aspects.hairColor": { $in: ['black', 'No hair' ]} });
+
+// exercicio 11
+use('class');
+db.superheroes.countDocuments({ "aspects.hairColor": { $nin: ['black', 'No hair' ]} });
+
+// exercicio 12
+use('class');
+db.superheroes.countDocuments({ "aspects.height": { $not: { $gt: 180 }}});
+
+// exercicio 13
+use('class');
+db.superheroes.find({ 
+  $nor: [
+    { race: "Human" },
+    { "aspects.height": { $gt: 180 }}
+  ]
+});
+
+// exercicio 14
+use('class');
+db.superheroes.find({ 
+  $and: [
+    { "aspects.height": { $in: [ 180, 200 ]}},
+    { publisher: "Marvel Comics" }
+  ]
+ });
+
+// exercicio 15
+use('class');
+db.superheroes.find({
+  $and: [
+    { "aspects.weight": { $gte: 80, $lte: 100 }},
+    { race: { $in: [ "Human", "Mutant" ]}},
+    { publisher: { $ne: "DC Comics" }}
+  ]
+ });
+
+ // exercicio 16
+use('class');
+db.superheroes.countDocuments({ race: { $exists: false } });
+
+ // exercicio 17
+use('class');
+db.superheroes.countDocuments({ "aspects.hairColor": { $exists: true } });
+
+ // exercicio 18
+use('class');
+db.superheroes.deleteOne({ publisher: "Sony Pictures" });
+
+ // exercicio 19
+use('class');
+db.superheroes.deleteMany({ publisher: "George Lucas" });
