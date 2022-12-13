@@ -151,6 +151,7 @@ db.movies.updateMany(
   }
 );
 
+
 // exercício 13
 use('class');
 db.movies.updateMany(
@@ -163,4 +164,107 @@ db.movies.updateMany(
     }
   }
 );
+
+// exercicio 14
 use('class');
+db.xmen.updateMany(
+  {
+    class: "unknown"
+  },
+  {
+    $unset: {
+      class: ''
+    }
+  }
+)
+
+// exercicio 15
+use('class');
+db.xmen.updateMany(
+  {},
+  {
+    $rename: {
+      name: 'hero_name',
+      true_name: 'full_name'
+    },
+    $set: {
+      power: 100
+    }
+  }
+)
+
+// exercicio 16
+use('class');
+db.xmen.updateMany(
+  {
+    class: { $in: ['omega', 'gama'] }
+  },
+  {
+    $max: {
+      power: 500
+    }
+  }
+)
+
+// exercicio 17
+use('class');
+db.xmen.updateMany(
+  {
+    class: 'gama'
+  },
+  {
+    $min: {
+      power: 300
+    }
+  }
+)
+
+// exercicio 18
+use('class');
+db.xmen.updateMany(
+  {
+    class: { $exists: false }
+  },
+  {
+    $inc: {
+      power: -100
+    }
+  }
+)
+
+// exercício 19
+use('class');
+db.xmen.updateMany(
+  {
+    $or: [
+      {
+        occupation: 'Senior Staff',
+        power: { $gt: 100 }
+      },
+            {
+        occupation: 'Junior Staff',
+        power: { $gt: 200 }
+      },
+    ]
+
+  },
+  {
+    $set: {
+      areas: ['Students Room']
+    }
+  }
+)
+
+// exercício 20
+use('class');
+db.xmen.updateMany(
+  {
+    occupation: 'Junior Staff',
+    areas: { $exists: false }
+  },
+  {
+    $set: {
+      areas: ['Outside']
+    }
+  }
+)
