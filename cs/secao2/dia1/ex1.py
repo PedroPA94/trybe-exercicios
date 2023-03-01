@@ -28,15 +28,3 @@ class TV:
     def ligar_desligar(self):
         self.__ligada = not self.__ligada
         print(self.__ligada)
-
-
-tv = TV(100)
-
-tv.aumentar_volume()
-tv.aumentar_volume()
-tv.aumentar_volume()
-tv.diminuir_volume()
-tv.diminuir_volume()
-tv.modificar_canal(20)
-tv.ligar_desligar()
-tv.ligar_desligar()
