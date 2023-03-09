@@ -7,6 +7,11 @@ with MongoClient() as client:
 
     pipeline = [
         {
+            '$match': {
+                'status': 'PUBLISH'
+            }
+        },
+        {
             '$unwind': '$categories',
         },
         {
