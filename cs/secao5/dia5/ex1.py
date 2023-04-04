@@ -5,6 +5,9 @@ class Queue:
     def __init__(self) -> None:
         self.__queue = LinkedList()
 
+    def size(self):
+        return self.__queue.size()
+
     def is_empty(self):
         return self.__queue.size() == 0
 
@@ -15,4 +18,4 @@ class Queue:
         return self.__queue.insert(value, self.__queue.size())
 
     def dequeue(self):
-        return self.__queue.remove(0)
+        return self.__queue.remove(0).value
